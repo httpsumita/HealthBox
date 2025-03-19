@@ -15,7 +15,7 @@ const FadeInText: React.FC<FadeInTextProps> = ({
   subtext,
   className,
   subtextClassName,
-  delay = 0
+  delay = 100
 }) => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -25,11 +25,11 @@ const FadeInText: React.FC<FadeInTextProps> = ({
   }, [delay]);
 
   return (
-    <div className="flex flex-col items-center mt-16">
+    <div className="flex flex-col items-center mt-4">
       {/* Main Text */}
       <h1
         className={clsx(
-          "opacity-0 transition-opacity duration-500 ease-in-out font-semibold text-center px-16",
+          "opacity-0 transition-opacity duration-0 ease-in-out font-semibold text-center px-16",
           isVisible ? "opacity-100" : "",
           className
         )}

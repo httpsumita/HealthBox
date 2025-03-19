@@ -8,7 +8,7 @@ export default function Home() {
     <>
     <Navbar />
     {/* <AnimatedText text="ABCD" /> */}
-    <FadeInText text="Let me know the symptoms and I will suggest you the best medication" className="text-l sm:mx-18 md:mx-64" subtext="Some are" subtextClassName="text-gray-900" />
+    {/* <FadeInText text="Let me know the symptoms and I will suggest you the best medication" className="text-l sm:mx-18 md:mx-64"  /> */}
     <ChatRoom />
     
     </>
