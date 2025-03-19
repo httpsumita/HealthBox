@@ -81,8 +81,8 @@ export function ChatRoom() {
   const quickReplies = ["Headache", "Nausea", "Fever", ];
 
   return (
-    <div className={`h-3/4 ${isDarkMode ? "bg-gray-900 text-white" : "bg-gray-100 text-gray-900"}`}>
-      <div className="max-w-4xl mx-auto px-4 pt-4 pb-2">
+    <div className={`h-3/4 overflow-y-hidden ${isDarkMode ?  "bg-gray-900 text-white" : "bg-gradient-to-br from-zinc-50 via-red-100 to-slate-50 text-gray-900"}`}>
+      <div className="max-w-4xl mx-auto px-4 pt-4 pb-18">
         <div className={`h-[375px] md:h-[425px]  ${isDarkMode ? "bg-gray-800" : "bg-white"} rounded-xl shadow-lg flex flex-col`}>
           <div className="flex-1 overflow-y-auto p-6">
             <div className="space-y-4">

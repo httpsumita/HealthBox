@@ -16,7 +16,7 @@ const Navbar = () => {
           className="inline-flex items-center"
         >
           
-          <img src="/HealthBox.png" className="h-[80px] w-[80px]" />
+          <img src="/HealthBox.png" className="h-[45px] w-[45px]" />
           <span className="ml-2 text-xl font-serif font-bold tracking-wide text-gray-800 uppercase">
             Health Box
           </span>
