@@ -25,7 +25,7 @@ export function ChatRoom() {
   const model = genAI.getGenerativeModel({
     model: "gemini-2.0-flash",
     systemInstruction:
-      "Studying the symptoms give a clear follow up having medicine recommendation, precautions, probable causes, dietary changes and other information needed . Reply back in points and subpoints concisely If you are asked anything else apart from medical advise say - Not in my scope .\n",
+      "If you are asked anything else apart from medical advise strictly say - Not in my scope .Studying the symptoms give a clear follow up having medicine recommendation, precautions, probable causes, dietary changes and other information needed . Reply back in points and subpoints concisely. \n",
   });
 
   const generationConfig = {
