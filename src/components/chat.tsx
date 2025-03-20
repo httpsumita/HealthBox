@@ -81,9 +81,9 @@ export function ChatRoom() {
   const quickReplies = ["Headache", "Nausea", "Fever", ];
 
   return (
-    <div className={`h-3/4 overflow-y-hidden ${isDarkMode ?  "bg-gray-900 text-white" : "bg-gradient-to-br from-zinc-50 via-red-100 to-slate-50 text-gray-900"}`}>
+    <div className={`h-3/4 overflow-y-hidden ${isDarkMode ?  "bg-gray-900 text-white" : "bg-sky-200 text-gray-900"}`}>
       <div className="max-w-4xl mx-auto px-4 pt-4 pb-18">
-        <div className={`h-[375px] md:h-[425px]  ${isDarkMode ? "bg-gray-800" : "bg-white"} rounded-xl shadow-lg flex flex-col`}>
+        <div className={`h-[375px] md:h-[425px]  ${isDarkMode ? "bg-gray-800" : "bg-white"} rounded-xl shadow-xl flex flex-col`}>
           <div className="flex-1 overflow-y-auto p-6">
             <div className="space-y-4">
               {messages.map((message) => (
@@ -117,7 +117,7 @@ export function ChatRoom() {
                 <button
                   key={index}
                   onClick={() => handleQuickReplyClick(text)}
-                  className="px-2 text-center py-2 bg-[#4D55CC] text-white rounded-md text-sm hover:bg-white hover:text-black transition-colors"
+                  className="px-2 text-center py-2 bg-sky-400 text-white rounded-md text-sm hover:bg-black hover:text-sky-800 transition-colors"
                 >
                   {text}
                 </button>
@@ -131,13 +131,13 @@ export function ChatRoom() {
                 value={inputText}
                 onChange={(e) => setInputText(e.target.value)}
                 placeholder="Type your message..."
-                className={`flex-1 px-4 py-2 rounded-lg ${
-                  isDarkMode ? "bg-gray-700 text-white placeholder-gray-400" : "bg-gray-100 text-gray-900 placeholder-gray-500"
+                className={`flex-1 px-4 py-2 rounded-xl ${
+                  isDarkMode ? "bg-gray-700 text-white placeholder-gray-400" : "bg-gray-300 text-gray-900 placeholder-gray-500"
                 }`}
               />
               <button
                 type="submit"
-                className="px-4 py-2 bg-blue-600 text-WHITE rounded-lg hover:bg-blue-700 transition-colors"
+                className="px-4 py-2 bg-sky-400 text-WHITE rounded-lg hover:bg-black transition-colors"
               >
                 <Send size={20} />
               </button>
